@@ -1,0 +1,11 @@
+name: My Task
+
+on: push
+
+jobs:
+  job_1:
+    runs-on: self-hosted
+    steps:
+      - name: My first step
+        run: echo This is the first step of my first job.
+        
