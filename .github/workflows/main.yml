@@ -1,6 +1,8 @@
 name: My Task
 
-on: push
+on:
+   push:
+   pull_request:
 
 jobs:
   job_1:
