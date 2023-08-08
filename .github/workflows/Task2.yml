@@ -1,0 +1,14 @@
+name: My Task
+
+on: push
+
+jobs:
+  job_1:
+    runs-on: self-hosted
+    steps:
+      - name: My first step
+        run: echo This is the first step of my first job.
+
+      - name: Pull Project to /var/www
+        run: |
+          ssh iftikhar@iftikhar-Inspiron-3521 'cd /var/www && git pull'
